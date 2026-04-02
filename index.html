@@ -1,16 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
 <div class="login-container" id="login-box">
     <div class="login-card">
-
         <h1>🛒 SmartCart</h1>
-        <p class="tagline">Your Premium Electronics Store</p>
+        <p class="tagline">Your Electronics Store</p>
 
-        <input id="username" placeholder="Enter Username">
-        <input id="password" type="password" placeholder="Enter Password">
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
 
         <button onclick="login()">Login</button>
         <button onclick="signup()" class="signup-btn">Create Account</button>
 
         <p id="error"></p>
-
     </div>
 </div>
+
+<!-- MAIN -->
+<div id="main" style="display:none;">
+
+<nav>
+    <h2>⚡ SmartCart</h2>
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchProduct()">
+    <div>
+        ❤️ (<span id="wish-count">0</span>) |
+        🛒 (<span id="cart-count">0</span>)
+    </div>
+</nav>
+
+<h2 id="welcome"></h2>
+
+<div class="grid" id="products"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
