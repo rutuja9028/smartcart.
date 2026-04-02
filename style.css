@@ -1,0 +1,60 @@
+
+/* LOGIN BG */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+/* LOGIN CARD */
+.login-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* TEXT */
+.login-card h1 {
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.login-card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.login-card button {
+    width: 95%;
+    margin-top: 10px;
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+    background: #198754;
+}
+
+.signup-btn:hover {
+    background: #146c43;
+}
+
+/* ERROR */
+#error {
+    color: red;
+    margin-top: 10px;
+}
